@@ -1,0 +1,28 @@
+{
+    "name": "node-demo",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "node_modules/babel/bin/babel.js src --source-maps --out-dir dist",
+        "start": "node_modules/nodemon/bin/nodemon.js -- node_modules/babel/bin/babel-node.js src/server.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "bcrypt": "^5.1.0",
+        "body-parser": "^1.20.2",
+        "dotenv": "^16.3.1",
+        "express": "4.13.3",
+        "express-validator": "^7.0.1",
+        "ioredis": "^5.3.2",
+        "jsonwebtoken": "^9.0.1",
+        "mongodb": "^5.7.0",
+        "redis": "^4.6.7"
+    },
+    "devDependencies": {
+        "babel": "5.8.29",
+        "nodemon": "1.8.0"
+    }
+}
